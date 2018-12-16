@@ -22,6 +22,7 @@ class AllitebooksComSpider(CrawlSpider):
                     if self.existing_counter == settings.CRAWLER_EXISTING_THRESHOLD:
                         raise CloseSpider('Existing item threshold reached, aborting')
                 else:
+                    self.existing_counter = 0
                     yield scrapy.Request(url, callback = self.parse_details, errback = self.handle_error)
             except Book.DoesNotExist:
                 yield scrapy.Request(url, callback = self.parse_details, errback = self.handle_error)
