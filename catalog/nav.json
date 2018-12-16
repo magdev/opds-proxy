@@ -1,0 +1,52 @@
+{
+	"root": {
+		"entries": [
+			{
+				"title": "Browse Catalog",
+				"content": "Browse the entire Catalog",
+				"type": "navigation",
+				"url": "/opds/catalog.xml",
+				"uuid_key": "catalog"
+			},
+			{
+				"title": "Browse Authors",
+				"content": "Browse available Authors",
+				"type": "navigation",
+				"url": "/opds/authors.xml",
+				"uuid_key": "authors"
+			},
+			{
+				"title": "Browse Categories",
+				"content": "Browse available Categories",
+				"type": "navigation",
+				"url": "/opds/categories.xml",
+				"uuid_key": "categories"
+			}
+		]
+	},
+	"catalog":  {
+		"entries": [
+			{
+				"title": "Recent Updates",
+				"content": "Browse recently updated Books",
+				"type": "navigation",
+				"url": "/opds/books.xml?order_by=-updated_at",
+				"uuid_key": "recent_updates" 
+			},
+			{
+				"title": "Ordered by Title",
+				"content": "Ordered by Title",
+				"type": "acquisition",
+				"url": "/opds/books.xml?order_by=title",
+				"uuid_key": "catalog_by_title"
+			},
+			{
+				"title": "Ordered by Year (desc.)",
+				"content": "Descending ordered by Year of publication",
+				"type": "acquisition",
+				"url": "/opds/books.xml?order_by=-year",
+				"uuid_key": "catalog_by_year"
+			}
+		]
+	}
+}

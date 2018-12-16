@@ -1,0 +1,14 @@
+<?xml version="1.0" standalone='no'?><!--*-nxml-*-->
+<!DOCTYPE service-group SYSTEM "avahi-service.dtd">
+<!-- See avahi.service(5) for more information about this configuration file -->
+<!-- See https://code.google.com/archive/p/openpub/wikis/DeprecatedOPDSSpecification.wiki for OPDS spec -->
+ <service-group>
+  <name>OPDS-Proxy</name>
+  <service>
+    <type>_opds._tcp</type>
+    <port>8008</port>
+    <host-name>laptop.local</host-name>
+    <txt-record>protocol=http</txt-record>
+    <txt-record>path=/opds</txt-record>
+  </service>
+</service-group>

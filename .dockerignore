@@ -1,0 +1,14 @@
+scrapy-lastrun.txt
+
+crawler/dbs/
+crawler/*.log
+crawler/.scrapy/
+
+.project
+.pydevproject
+.directory
+.settings/
+
+**/__pycache__/
+**/*.py[cod]
+assets/

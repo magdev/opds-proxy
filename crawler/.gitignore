@@ -1,0 +1,8 @@
+/*.sql
+/*.log
+/.scrapy/
+/__pycache__/
+.directory
+/dbs/
+/logs/
+/*.pid

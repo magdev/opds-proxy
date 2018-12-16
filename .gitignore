@@ -1,0 +1,10 @@
+/.settings/
+/.directory
+/.project
+/.pydevproject
+/scrapy-lastrun.txt
+/assets/
+
+__pycache__/
+*.py[cod]
+/.virtualenv

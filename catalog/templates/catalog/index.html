@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% load pipeline %}
+{% load static %}
+<html{% if lang %} lang="{{ lang }}"{% endif %}>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>{% trans 'All IT-Ebooks OPDS-Proxy' %}</title>
+        <link href="http://www.allitebooks.com/wp-content/themes/allitebooks/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <link rel="alternate" type="application/atom+xml;type=feed;profile=opds-catalog;kind=navigation" title="{% trans 'OPDS-Catalog' %}" href="/opds/root.xml" />
+        {% stylesheet 'app' %}
+    </head>
+    <body>
+        <div id="app"></div>
+        <script src="{% static 'js/ui.js' %}"></script>
+        {% javascript 'app' %}
+    </body>
+</html>
